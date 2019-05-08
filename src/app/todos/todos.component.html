@@ -1,0 +1,17 @@
+<h3>TODOS</h3>
+
+<ul>
+  <li *ngFor="let todo of todos">
+    <!--{{todo.id}}-->
+    <!--{{todo.completed}}-->
+    <!--{{todo.title}}-->
+    <!--{{todo.userId}}-->
+
+    <a [routerLink]="'/todos/' + todo.id" [queryParams]="todo" >
+        <!--this sintax for a-tag also works-->
+      <!--<a [routerLink]="todo.id" >-->
+      {{todo.title}}
+    </a>
+
+  </li>
+</ul>

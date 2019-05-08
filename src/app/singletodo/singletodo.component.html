@@ -1,0 +1,19 @@
+<p *ngIf="todo">
+  {{todo.title}}<br>
+  {{todo.completed}}<br>
+</p>
+
+<a routerLink="/todos/7">/todos/7 </a>
+
+<button (click)="goToTodos()" >Todos</button>
+
+<!--this router is for children array of components to be displayed here-->
+<ul>
+  <li>
+    <a routerLink="details">Details</a>
+  </li>
+  <li>
+    <a routerLink="update">Update</a>
+  </li>
+</ul>
+<router-outlet></router-outlet>
